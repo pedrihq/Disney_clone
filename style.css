@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --fonte-principal: "Roboto";
+  --cor-principal: #040914;
+  --cor-branca: #fff;
+  --cor-button-principal: #6421ff;
+  --cor-button-secundario: #000000cc;
+  --cor-cinza: #c0c0c0;
+}
+body {
+  background-color: var(--cor-principal);
+  grid-template-columns: repeat(auto-fit, milnmax(min(11.25rem, 100%), lfr));
+  grid-gap: 1rem;
+  font-family: 'Roboto';
+  color: var(--cor-cinza);
+}
+
+.conteudo__principal::before {
+  content: "";
+  color: white;
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(./assets/bannerPrincipal.jpeg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 40% auto;
+  transform: scaleY(1.2);
+}
+
+.area__button__principal {
+  display: flex;
+  justify-content: end;
+}
+.button__principal__entra {
+  background-color: var(--cor-button-secundario);
+  margin: 15px 35px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 1.5px solid var(--cor-branca);
+  border-radius: 2.5px;
+  color: var(--cor-branca);
+  font-weight: 400;
+  font-size: 1em;
+  transition: all linear 0.1s;
+}
+.titulos__secundario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.button__principal__entra:hover {
+  background-color: var(--cor-branca);
+  color: var(--cor-button-secundario);
+}
+.button__principal__entra:active {
+  transform: scale(90%);
+}
+.conteudos__assinantes {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+  width: 45%;
+  gap: 1.5em;
+}
+.conteudos__assinantes img {
+  width: 180px;
+}
+.conteudos__assinantes h1 {
+  font-weight: 700;
+  font-size: 47px;
+  color: var(--cor-branca);
+}
+.button__de__asinatura_combo {
+  background-color: var(--cor-button-principal);
+  padding: 25px 34px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+  text-align: center;
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 20px;
+  transition: all linear 0.2s;
+}
+.button__de__asinatura_combo:hover {
+  background-color: #6356fc;
+}
+.button__de__asinatura_combo:active {
+  transform: scale(90%);
+}
+.button__assinar_somente__disney {
+  color: var(--cor-branca);
+  font-size: 1.4em;
+  font-weight: 100;
+}
+.conteudo__secundario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo_principal__conteudo_secundario {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-branca);
+  margin-top: 2em;
+  font-size: 2.6em;
+  font-weight: 700;
+}
+.titulo_secundario__conteudo_secundario {
+  color: var(--cor-branca);
+  margin: 2em;
+  font-size: 1.2em;
+  font-family: var(--fonte-principal);
+  font-weight: 100;
+}
+.comparacao_dos_planos__disney {
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
+  display: grid;
+  grid-template-columns: 287px 287px 0px;
+  margin-left: 20em;
+}
+.disney_plus__caixa {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
+  background-color: var(--cor-principal);
+}
+.disney_combo__caixa {
+  padding: 21px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d1f2b;
+  border-top: 2px solid hsla(0, 0%, 100%, 0.1);
+}
+.disney_plus__caixa img {
+  width: 100px;
+  padding: 1.5em;
+}
+.img_combo {
+  width: 130px;
+  padding: 1.5em;
+}
+.h6__combo_conteudo_secundario {
+  color: var(--cor-branca);
+  font-size: 16px;
+  font-weight: 400;
+}
+.button__comparacao_dos_planos_disney {
+  padding: 20px 5px;
+  background-color: #0063e5;
+  color: var(--cor-branca);
+  display: flex;
+  align-items: center;
+  width: 260px;
+  border-radius: 3px;
+  justify-content: center;
+  text-decoration: none;
+}
+.button__comparacao_dos_planos_combo {
+  padding: 20px 5px;
+  background-color: var(--cor-button-principal);
+  color: var(--cor-branca);
+  display: flex;
+  align-items: center;
+  width: 260px;
+  border-radius: 3px;
+  justify-content: center;
+  text-decoration: none;
+}
+.tabela_conteudo_secundario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+.tabela_conteudo_secundario .cabeca_conteudo_secundario {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+  background-color: var(--cor-principal);
+}
+.conteudo_cabeca_conteudo_secundario {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 2.5px solid var(--cor-branca);
+  font-weight: 400;
+}
+.frase_de_infor {
+  border-top: 2.5px solid var(--cor-branca);
+  font-weight: 100;
+}
+.frase_de_infor h5 {
+  margin-top: 1.5em;
+  font-weight: 100;
+}
+.conteudo_cabeca_conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--cor-cinza);
+  font-weight: 400;
+}
+.conteudo_cabeca_conteudo_secundario h4 {
+  font-size: 19.5px;
+}
+.resumo_do_pacote {
+  margin-right: 15em;
+}
+.resumo_do_pacote_seg {
+  width: 370px;
+}
+.div_de_conteudos_tabela {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.1em;
+}
+.img_inons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1f2b;
+  width: 300px;
+  height: 9em;
+}
+.img_inons_seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1f2b;
+  width: 300px;
+  height: 5em;
+}
+.imgs_pri {
+  width: 300px;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_pri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secundario {
+  margin: 10em 5em;
+}
+.container {
+  height: 100vh;
+  display: grid;
+}
+.banner_secundario{
+  display: flex;
+}
+.banner_secundario h1{
+  font-size: 2.1em;
+  padding: 1em;
+  font-weight: 100;
+}
+.container__descricao img {
+  width: 100%;
+  height: 30em;
+}
+.descricao__texto strong{
+  font-weight: 700;
+}
+.container__descricao {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+.intens_alinha {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.animacao {
+  transition: all linear 0.2s;
+}
+.animacao:active {
+  transform: scale(90%);
+}
+/*Dimenções do Celular*/
+@media (max-width: 450px) {
+}
+/*Dimenções do Celular*/
+@media (max-width: 450px) {
+  .conteudos__assinantes {
+    align-items: center;
+    margin-top: 10em;
+    width: 60%;
+  }
+  .logo__principal {
+    width: 80px;
+  }
+  .conteudos__assinantes h1 {
+    font-size: 2em;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 150%;
+  }
+  .coteudo__principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .button__de__asinatura_combo {
+    width: 100%;
+    font-size: medium;
+  }
+  .button__assinar_somente__disney {
+    font-size: medium;
+  }
+}
