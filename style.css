@@ -14,7 +14,7 @@ body {
   background-color: var(--cor-principal);
   grid-template-columns: repeat(auto-fit, milnmax(min(11.25rem, 100%), lfr));
   grid-gap: 1rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: var(--cor-cinza);
 }
 
@@ -30,7 +30,8 @@ body {
   background-image: url(./assets/bannerPrincipal.jpeg);
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 40% auto;
+  background-size: 45% auto;
+  -webkit-mask-image: linear-gradient(to right,transparent 55%, black 65%);
   transform: scaleY(1.2);
 }
 
@@ -111,7 +112,7 @@ body {
   display: flex;
   justify-content: center;
   color: var(--cor-branca);
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 2.6em;
   font-weight: 700;
 }
@@ -184,6 +185,7 @@ body {
   flex-direction: column;
   margin-left: 12em;
   margin-right: 12em;
+  flex-wrap: wrap;
 }
 .tabela_conteudo_secundario .cabeca_conteudo_secundario {
   display: flex;
@@ -265,10 +267,10 @@ body {
   height: 100vh;
   display: grid;
 }
-.banner_secundario{
+.banner_secundario {
   display: flex;
 }
-.banner_secundario h1{
+.banner_secundario h1 {
   font-size: 2.1em;
   padding: 1em;
   font-weight: 100;
@@ -277,7 +279,7 @@ body {
   width: 100%;
   height: 30em;
 }
-.descricao__texto strong{
+.descricao__texto strong {
   font-weight: 700;
 }
 .container__descricao {
@@ -285,11 +287,56 @@ body {
   display: flex;
   align-items: center;
 }
+.intens_center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
 .intens_alinha {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1em;
+  
+}
+.perguntas_frequentes {
+  margin-top: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 1%;
+}
+.perguntas_frequentes div:not(.content-collapse){
+  background-color: #13151d;
+  color: var(--cor-branca);
+  font-size: 17px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 100;
+  border-radius: 2px;
+  padding: 1em;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.img_destaques_serie_filmes div{
+margin: 0 5% 0;
+padding: 5% 1% 5% 1%; 
+}
+.img_destaques_serie_filmes img {
+  border-radius: 20px;
+  margin: 0%;
+  width: 30.1%;
+  padding: 1%;
+}
+.logo_footer{
+  width: 100%;
+  height: 50px;
+  margin-top: 5em;
 }
 .animacao {
   transition: all linear 0.2s;
@@ -297,6 +344,33 @@ body {
 .animacao:active {
   transform: scale(90%);
 }
+.a a{
+  margin: 5px;
+  font-size: 15px;
+  color: var(--cor-cinza);
+  text-decoration: none;
+  font-weight: 100;
+}
+.footer{
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
+.respostas_das_perguntas:hover + .content-collapse {
+  display: flex;
+}
+
+.content-collapse{
+  padding: 17px;  
+  background-color: #13151d;
+  width: 100%;
+  display: none;
+  transition: all ease 1s;
+  margin-top: -20px;
+  height: 15em;
+  border-radius: 2px;
+}
+
 /*Dimenções do Celular*/
 @media (max-width: 450px) {
 }
